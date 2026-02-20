@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* Paleta de Colores CreaLab */
+/* Modo Oscuro */
+/*Estados */
+/* Animación de Tarjetas (Levitar) */
+/* Animación Botón Flotante (+) */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Clases de texto personalizadas */
+.txt-brand {
+  color: #FF6B00;
+}
+
+.txt-gray {
+  color: #b3b3b3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #FF6B00;
+}
+
+.btn-brand {
+  background-color: #FF6B00;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn-brand:hover {
+  background-color: #e65100;
+  color: #ffffff;
+}
+
+.form-control-dark {
+  background-color: #1E1E1E;
+  border: 1px solid #333333;
+  color: #ffffff;
+}
+.form-control-dark::placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.form-control-dark:focus {
+  background-color: #1E1E1E;
+  color: #ffffff;
+  border-color: #FF6B00;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+}
+
+/*Nav y Tarjetas*/
+.navbar-custom {
+  background-color: #1E1E1E;
+  border-bottom: 1px solid #333333;
+}
+
+.card-custom {
+  background-color: #1E1E1E;
+  border: 1px solid #333333;
+  color: #ffffff;
+  /*Animacion de la carta*/
+}
+.card-custom.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+.card-custom.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.15);
+  border-color: #FF6B00;
+}
+
+/*Estados NEON para los Bordesitos*/
+.neon-success {
+  border-left: 5px solid #198754;
+}
+
+.neon-warning {
+  border-left: 5px solid #ffc107;
+}
+
+.neon-danger {
+  border-left: 5px solid #dc3545;
+}
+
+/*Boton (+) animado*/
+.btn-pulse {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FF6B00;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 1;
+  padding-bottom: 4px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.btn-pulse:hover {
+  transform: scale(1.15) rotate(90deg);
+  background-color: #e65100;
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.7);
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

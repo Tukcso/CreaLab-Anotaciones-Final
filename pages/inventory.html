@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inventario de recursos técnicos y equipos de grabación de CreaLab.">
+    <meta name="author" content="Ariel">
+    
+    <title>Recursos | CreaLab</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3 mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Crea<span class="txt-brand">Lab</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link text-white" href="./dashboard.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link active txt-brand fw-bold" href="#">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link txt-gray" href="../index.html">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pb-5 flex-grow-1">
+        
+        <header class="mb-5 d-flex justify-content-between align-items-end border-bottom border-secondary pb-3">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-1">
+                        <li class="breadcrumb-item"><a href="./dashboard.html" class="txt-gray text-decoration-none">Inicio</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Recursos Técnicos</li>
+                    </ol>
+                </nav>
+                <h1 class="h2 text-white m-0">Inventario de Equipos</h1>
+            </div>
+            
+            <a href="#" class="btn-pulse" aria-label="Agregar Nuevo Equipo" title="Agregar Equipo">
+               +
+            </a>
+        </header>
+
+        <section class="mb-4 d-flex gap-2 overflow-auto py-2">
+            <button class="btn btn-sm btn-brand rounded-pill px-3">Todos</button>
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3">🎥 Cámaras</button>
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3">💡 Iluminación</button>
+            <button class="btn btn-sm btn-outline-light rounded-pill px-3">🎙️ Sonido</button>
+        </section>
+
+        <section class="row g-4">
+            
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card card-custom h-100 p-3 card-hover text-center">
+                    <div class="bg-secondary mb-3 rounded d-flex justify-content-center align-items-center mx-auto" style="height: 120px; width: 100%;">
+                        <span class="fs-1">🎥</span>
+                    </div>
+                    <h2 class="h6 text-white mb-1">Sony FX3 Cinema</h2>
+                    <p class="txt-brand small fw-bold mb-2">Cámara Principal</p>
+                    <span class="badge bg-success mx-auto mb-3">DISPONIBLE</span>
+                    <button class="btn btn-sm btn-outline-secondary w-100 mt-auto text-white">Ver Detalles</button>
+                </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card card-custom h-100 p-3 card-hover text-center opacity-75">
+                    <div class="bg-secondary mb-3 rounded d-flex justify-content-center align-items-center mx-auto" style="height: 120px; width: 100%;">
+                        <span class="fs-1">🔭</span>
+                    </div>
+                    <h2 class="h6 text-white mb-1">Lente Sigma 24-70mm</h2>
+                    <p class="txt-brand small fw-bold mb-2">Óptica</p>
+                    <span class="badge bg-warning text-dark mx-auto mb-3">EN REPARACIÓN</span>
+                    <button class="btn btn-sm btn-outline-secondary w-100 mt-auto text-white">Ver Detalles</button>
+                </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card card-custom h-100 p-3 card-hover text-center">
+                    <div class="bg-secondary mb-3 rounded d-flex justify-content-center align-items-center mx-auto" style="height: 120px; width: 100%;">
+                        <span class="fs-1">💡</span>
+                    </div>
+                    <h2 class="h6 text-white mb-1">Aputure 300d II</h2>
+                    <p class="txt-brand small fw-bold mb-2">Iluminación</p>
+                    <span class="badge bg-danger mx-auto mb-3">EN USO</span>
+                    <button class="btn btn-sm btn-outline-secondary w-100 mt-auto text-white">Ver Detalles</button>
+                </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-3">
+                <div class="card card-custom h-100 p-3 card-hover text-center">
+                    <div class="bg-secondary mb-3 rounded d-flex justify-content-center align-items-center mx-auto" style="height: 120px; width: 100%;">
+                        <span class="fs-1">🎙️</span>
+                    </div>
+                    <h2 class="h6 text-white mb-1">Rode NTG4+</h2>
+                    <p class="txt-brand small fw-bold mb-2">Micrófono Cañón</p>
+                    <span class="badge bg-success mx-auto mb-3">DISPONIBLE</span>
+                    <button class="btn btn-sm btn-outline-secondary w-100 mt-auto text-white">Ver Detalles</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

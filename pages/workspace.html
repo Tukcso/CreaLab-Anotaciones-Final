@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan de rodaje y gestión de escenas para el proyecto activo en CreaLab.">
+    <meta name="author" content="Ariel">
+    <title>Rodaje | CreaLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3 mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Crea<span class="txt-brand">Lab</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link txt-brand fw-bold" href="./dashboard.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="./inventory.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link txt-gray" href="../index.html">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pb-5 flex-grow-1">
+        
+        <header class="mb-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./dashboard.html" class="txt-gray text-decoration-none">Proyectos</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">La Venganza del Pato</li>
+                </ol>
+            </nav>
+            <h1 class="h2 text-white mt-2">Plan de Rodaje</h1>
+        </header>
+
+        <div class="row">
+            <aside class="col-md-3 mb-4">
+                <div class="nav flex-column nav-pills gap-2 border-end border-secondary pe-3">
+                    <p class="text-white small d-none d-md-block fw-bold mb-2">SECCIONES</p>
+                    <a class="nav-link active bg-warning text-dark fw-bold shadow-sm" href="#">🎬 Rodaje</a>
+                    <a class="nav-link text-white" href="./arte.html">🎨 Arte</a>
+                    <a class="nav-link text-white" href="./elenco.html">👥 Elenco</a>
+                </div>
+            </aside>
+
+            <section class="col-md-9 ps-md-4">
+
+                <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-3 mb-4">
+                    <h2 class="h4 text-white m-0">Escenas del Día 1</h2>
+                    
+                    <a href="#" class="btn-pulse" aria-label="Agregar Nueva Escena" title="Agregar Escena">
+                       +
+                    </a>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+
+                    <article class="card card-custom p-3 neon-success card-hover">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge bg-secondary p-2">08:00 AM</span>
+                                <div>
+                                    <h3 class="h6 mb-0 text-white">Escena 1 - Introducción</h3>
+                                    <small class="txt-gray">Ext. Parque | Día</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-success">FILMADA</span>
+                        </div>
+                    </article>
+
+                    <article class="card card-custom p-3 neon-warning card-hover border-warning">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge bg-warning text-dark p-2 fw-bold">10:30 AM</span>
+                                <div>
+                                    <h3 class="h6 mb-0 text-white">Escena 4 - El Encuentro</h3>
+                                    <small class="txt-brand fw-bold">Int. Baño | Noche (Simulada)</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-warning text-dark shadow-sm">EN PROGRESO</span>
+                        </div>
+                        <div class="mt-3 ps-5 border-start border-secondary ms-2">
+                            <p class="small text-white mb-1">🎥 <strong>Cámara:</strong> Plano medio y primer plano.</p>
+                        </div>
+                    </article>
+
+                    <article class="card card-custom p-3 neon-danger card-hover">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="badge bg-dark border border-secondary p-2">14:00 PM</span>
+                                <div>
+                                    <h3 class="h6 mb-0 text-white">Escena 5 - Desenlace</h3>
+                                    <small class="txt-gray">Int. Cocina | Día</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-danger">PENDIENTE</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

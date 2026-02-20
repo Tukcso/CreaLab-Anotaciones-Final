@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+body {
+    background-color: $bg-dark;
+    color: $text-main;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Clases de texto personalizadas */
+.txt-brand { color: $brand-primary; }
+.txt-gray { color: $text-muted; }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover { color: $brand-primary; }
+}
+
+.btn-brand {
+    background-color: $brand-primary;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    
+    &:hover { 
+        background-color: $brand-dark; 
+        color: #ffffff; 
+    }
+}
+
+
+.form-control-dark {
+    background-color: $bg-surface;
+    border: 1px solid $border-subtle;
+    color: $text-main;
+    
+    
+    &::placeholder {
+        color: #888888;
+        opacity: 1; 
+    }
+
+    &:focus {
+        background-color: $bg-surface;
+        color: $text-main;
+        border-color: $brand-primary;
+        box-shadow: 0 0 0 0.25rem rgba($brand-primary, 0.25);
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de elenco y actores para el proyecto en CreaLab.">
+    <meta name="author" content="Ariel">
+    
+    <title>Elenco | CreaLab</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3 mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Crea<span class="txt-brand">Lab</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link txt-brand fw-bold" href="./dashboard.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="./inventory.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link txt-gray" href="../index.html">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pb-5 flex-grow-1">
+        
+        <header class="mb-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./dashboard.html" class="txt-gray text-decoration-none">Proyectos</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">La Venganza del Pato</li>
+                </ol>
+            </nav>
+            <h1 class="h2 text-white mt-2">Casting</h1>
+        </header>
+
+        <div class="row">
+            <aside class="col-md-3 mb-4">
+                <div class="nav flex-column nav-pills gap-2 border-end border-secondary pe-3">
+                    <p class="text-white small d-none d-md-block fw-bold mb-2">SECCIONES</p>
+                    <a class="nav-link text-white" href="./workspace.html">🎬 Rodaje</a>
+                    <a class="nav-link text-white" href="./arte.html">🎨 Arte</a>
+                    <a class="nav-link active bg-warning text-dark fw-bold shadow-sm" href="#">👥 Elenco</a>
+                </div>
+            </aside>
+
+            <section class="col-md-9 ps-md-4">
+                
+                <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-3 mb-4">
+                    <h2 class="h4 text-white m-0">Lista de Elenco</h2>
+                    
+                    <a href="#" class="btn-pulse" aria-label="Agregar Nuevo Actor" title="Agregar Actor">
+                       +
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-custom h-100 p-4 text-center card-hover">
+                            <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center mx-auto mb-3 border border-2 border-warning" 
+                                 style="width: 80px; height: 80px; font-weight: bold; font-size: 1.5rem;">
+                                GF
+                            </div>
+                            
+                            <h3 class="h5 mb-1 text-white">Giuliano D. Fernandez</h3>
+                            <p class="txt-brand small fw-bold mb-3">Personaje: Mc Pato</p>
+                            
+                            <div class="mt-auto">
+                                <span class="badge bg-dark border border-secondary w-100 py-2">CITADO 08:00</span>
+                                <div class="mt-3 d-flex justify-content-center gap-2">
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Llamar">📞</button>
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Enviar Mensaje">✉️</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-custom h-100 p-4 text-center card-hover">
+                            <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center mx-auto mb-3" 
+                                 style="width: 80px; height: 80px; font-weight: bold; font-size: 1.5rem;">
+                                EC
+                            </div>
+                            
+                            <h3 class="h5 mb-1 text-white">Emanuel Cahais</h3>
+                            <p class="txt-brand small fw-bold mb-3">Personaje: El Detective</p>
+                            
+                            <div class="mt-auto">
+                                <span class="badge bg-dark border border-secondary w-100 py-2">CITADO 09:00</span>
+                                <div class="mt-3 d-flex justify-content-center gap-2">
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Llamar">📞</button>
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Enviar Mensaje">✉️</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card card-custom h-100 p-4 text-center card-hover">
+                            <div class="rounded-circle bg-secondary d-flex justify-content-center align-items-center mx-auto mb-3" 
+                                 style="width: 80px; height: 80px; font-weight: bold; font-size: 1.5rem;">
+                                AS
+                            </div>
+                            
+                            <h3 class="h5 mb-1 text-white">Adam Samdler</h3>
+                            <p class="txt-brand small fw-bold mb-3">Personaje: La Víctima</p>
+                            
+                            <div class="mt-auto">
+                                <span class="badge bg-dark border border-secondary w-100 py-2">CITADO 10:00</span>
+                                <div class="mt-3 d-flex justify-content-center gap-2">
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Llamar">📞</button>
+                                    <button class="btn btn-sm btn-outline-light rounded-circle" aria-label="Enviar Mensaje">✉️</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.

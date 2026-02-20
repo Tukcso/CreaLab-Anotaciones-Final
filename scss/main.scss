@@ -1,0 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'base' as *;
+
+
+/*Nav y Tarjetas*/
+
+.navbar-custom {
+
+    background-color: $bg-surface;
+    border-bottom: 1px solid $border-subtle;
+
+}
+
+.card-custom {
+
+    background-color: $bg-surface;
+    border: 1px solid $border-subtle;
+    color: $text-main;
+
+    /*Animacion de la carta*/
+    &.card-hover {
+
+        @include hover-card
+    }
+
+}
+
+
+/*Estados NEON para los Bordesitos*/
+
+.neon-success {
+    border-left: 5px solid $status-success;
+}
+
+.neon-warning {
+    border-left: 5px solid $status-warning;
+}
+
+.neon-danger {
+    border-left: 5px solid $status-danger;
+}
+
+/*Boton (+) animado*/
+
+.btn-pulse {
+    @include btn-pulse-animation
+}
+
+
