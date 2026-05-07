@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Sony FX3 Cinema", "categoria": "Cámaras", "estado": "DISPONIBLE", "icono": "🎥" },
+  { "id": 2, "nombre": "Lente Sigma 24-70mm", "categoria": "Cámaras", "estado": "EN REPARACIÓN", "icono": "🔭" },
+  { "id": 3, "nombre": "Aputure 300d II", "categoria": "Iluminación", "estado": "EN USO", "icono": "💡" },
+  { "id": 4, "nombre": "Rode NTG4+", "categoria": "Sonido", "estado": "DISPONIBLE", "icono": "🎙️" }
+]

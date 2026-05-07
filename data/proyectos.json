@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pato-1",
+    "titulo": "La Venganza del Pato",
+    "imagen": "../assets/img/Pato.jpg",
+    "estadoBadge": "EN RODAJE",
+    "badgeColor": "warning",
+    "desc": "Cortometraje de suspenso y comedia absurda sobre un pato de hule maldito.",
+    "rodaje": [
+      { "id": 1, "hora": "08:00 AM", "titulo": "Escena 1", "locacion": "Ext. Parque", "estado": "FILMADA", "nota": "" }
+    ],
+    "arte": [
+      { "id": 1, "escena": "Escena 4 - Baño", "descripcion": "Pato de Hule Gigante", "estado": "CONSEGUIDO" }
+    ],
+    "elenco": [
+      { "id": 1, "nombre": "Giuliano D. Fernandez", "personaje": "Mc Pato", "citacion": "08:00" }
+    ]
+  },
+  {
+    "id": "sotano-2",
+    "titulo": "El Misterio del Sótano",
+    "imagen": "../assets/img/Sotano.jpg",
+    "estadoBadge": "FINALIZADO",
+    "badgeColor": "success",
+    "desc": "Proyecto universitario de primer año. Género terror.",
+    "rodaje": [],
+    "arte": [],
+    "elenco": []
+  },
+  {
+    "id": "ecovida-3",
+    "titulo": "Comercial EcoVida",
+    "imagen": "../assets/img/EcoVida.jpg",
+    "estadoBadge": "PRE-PROD",
+    "badgeColor": "danger",
+    "desc": "Spot publicitario para marca de productos ecológicos.",
+    "rodaje": [],
+    "arte": [],
+    "elenco": []
+  }
+]

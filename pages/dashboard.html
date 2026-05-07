@@ -29,79 +29,19 @@
 
     <main class="container py-5 flex-grow-1">
         
-        <header class="d-flex justify-content-between align-items-center mb-5 border-bottom border-secondary pb-3">
-            <h1 class="h2 text-white m-0">Mis Proyectos</h1>
-            <button class="btn btn-brand shadow">+</button>
-        </header>
+    <header class="d-flex justify-content-between align-items-center mb-5 border-bottom border-secondary pb-3">
+        <h1 class="h2 text-white m-0">Mis Proyectos</h1>
+        <button class="btn btn-brand shadow" onclick="crudProyecto('agregar')">+</button>
+    </header>
 
-        <section class="row g-4">
-
-            <article class="col-12 col-md-6 col-lg-4">
-                <a href="./workspace.html" class="text-decoration-none">
-                    <div class="card card-custom h-100 neon-warning card-hover shadow-sm overflow-hidden">
-                        
-                        <img src="../assets/img/Pato.jpg" alt="Portada La Venganza del Pato" class="card-img-top object-fit-cover" style="height: 180px;">
-
-                        <div class="card-body p-4 d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h2 class="h5 text-white fw-bold mb-0">La Venganza del Pato</h2>
-                                <span class="badge bg-warning text-dark">EN RODAJE</span>
-                            </div>
-                            <p class="txt-gray small mb-4">Cortometraje de suspenso y comedia absurda sobre un pato de hule maldito.</p>
-                            <div class="mt-auto border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
-                                <small class="txt-gray">Actualizado hace 2 hs</small>
-                                <span class="txt-brand fw-bold">Entrar &rarr;</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4">
-                <a href="#" class="text-decoration-none">
-                    <div class="card card-custom h-100 neon-success card-hover shadow-sm overflow-hidden">
-                        
-                        <img src="../assets/img/Sotano.jpg" alt="Portada El Misterio del Sótano" class="card-img-top object-fit-cover" style="height: 180px;">
-
-                        <div class="card-body p-4 d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h2 class="h5 text-white fw-bold mb-0">El Misterio del Sótano</h2>
-                                <span class="badge bg-success">FINALIZADO</span>
-                            </div>
-                            <p class="txt-gray small mb-4">Proyecto universitario de primer año. Género terror.</p>
-                            <div class="mt-auto border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
-                                <small class="txt-gray">Hace 1 mes</small>
-                                <span class="text-success fw-bold">Ver &rarr;</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </article>
-
-            <article class="col-12 col-md-6 col-lg-4">
-                <a href="#" class="text-decoration-none">
-                    <div class="card card-custom h-100 neon-danger card-hover shadow-sm overflow-hidden">
-                        
-                        <img src="../assets/img/EcoVida.jpg" alt="Portada Comercial EcoVida" class="card-img-top object-fit-cover" style="height: 180px;">
-
-                        <div class="card-body p-4 d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h2 class="h5 text-white fw-bold mb-0">Comercial "EcoVida"</h2>
-                                <span class="badge bg-danger">PRE-PROD</span>
-                            </div>
-                            <p class="txt-gray small mb-4">Spot publicitario para marca de productos ecológicos locales.</p>
-                            <div class="mt-auto border-top border-secondary pt-3 d-flex justify-content-between align-items-center">
-                                <small class="txt-gray">Ayer</small>
-                                <span class="text-danger fw-bold">Configurar &rarr;</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </article>
+        <section class="row g-4" id="grid-proyectos">
 
         </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="../js/dashboard.js"></script>
 </body>
-</html>
